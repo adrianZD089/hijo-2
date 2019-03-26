@@ -1,0 +1,36 @@
+<link rel="import" href="../polymer/polymer-element.html">
+
+<dom-module id="hijo-2">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]!</h2>
+  </template>
+
+  <script>
+    /**
+     * `hijo-2`
+     * 
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class Hijo2 extends Polymer.Element {
+      static get is() { return 'hijo-2'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'hijo-2'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(Hijo2.is, Hijo2);
+  </script>
+</dom-module>
